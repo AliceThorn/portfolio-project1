@@ -1,17 +1,20 @@
+
 body{
     font-family: 'Julius Sans One';
 }
 h1{
     font-size: 50px;
+    margin:5px;
 }
 h2{
-    font-size: 26px;
+    font-size: 30px;
+    margin:5px;
 }
 h3{
     font-size: 40px;
 }
 h4{
-    font-size: 30px;
+    font-size: 20px;
 }
 h5{
     font-size: 12px;
@@ -19,17 +22,36 @@ h5{
 
 #first{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width:100%;
+  height:120px;
 }
 #second{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width:100%;
 }
- 
+
+.boxone {text-align: right;}
+.boxthree, .boxfour, .boxfive {padding:10px;}
+
+@media screen and (min-width:450px){
+  .boxone {width: 66%; order:0;}
+  .boxtwo {width: 33%; order:-1;}
+  .hero {width: 100%;order:1}
+  .boxthree {width: 100%;order:2}
+  .boxfour {width: 100%;order:3}
+  .boxfive {width: 100%;order:4}
+}
 
 @media screen and (min-width:1001px){
-  .boxone, {width: 66%; order:1;}
-  .boxtwo, {width: 33%; order:0;}
-  .hero {width: 100%;}
-  .boxthree, .boxfour, .boxfive {width: 33%;}
+  .boxone {width: 90%; order:0;}
+  .boxtwo {width: 10%; order:-1;}
+  .hero {width: 100%;order:1;}
+  .boxthree {width: 33%;order:2;}
+  .boxfour {width: 33%;order:3;}
+  .boxfive {width: 33%;order:4;}
+  margin-left: auto;
+  margin-left: auto;
+  width: 1000px;
 }
