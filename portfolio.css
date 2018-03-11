@@ -1,0 +1,35 @@
+body{
+    font-family: 'Julius Sans One';
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 26px;
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 30px;
+}
+h5{
+    font-size: 12px;
+}
+
+#first{
+  display: flex;
+  flex-wrap: wrap;
+}
+#second{
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+
+@media screen and (min-width:1001px){
+  .boxone, {width: 66%; order:1;}
+  .boxtwo, {width: 33%; order:0;}
+  .hero {width: 100%;}
+  .boxthree, .boxfour, .boxfive {width: 33%;}
+}
